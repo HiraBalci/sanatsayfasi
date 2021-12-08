@@ -1,0 +1,387 @@
+#contact-form {
+  width: 70%;
+  margin: 0 auto;
+}
+.form-group {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+.form-group input,
+.form-group textarea {
+  border: none;
+  width: 100%;
+  display: block;
+  font-size: 2.4rem;
+}
+.form-group input:focus {
+  outline: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 6px;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+/*navbar*/
+nav {
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+  background-color: pink;
+  color: rgb(150, 66, 245);
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  position: fixed;
+  z-index: 500;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  /*float: left;*/
+}
+
+#logo-box .logo {
+  color: rgb(179, 66, 245);
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+#contact {
+  text-align: center;
+  padding: 20rem;
+  font-size: 2.6rem;
+  font-weight: 200;
+  color: rgb(197, 154, 231);
+}
+.col {
+  float: left;
+ width: 100%;
+  padding: 1rem;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  html {
+    font-size: 7px;
+  }
+  #about {
+    background-color: rgb(252, 168, 207);
+    height: 80rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  html {
+    font-size: 8px;
+  }
+  .col {
+    float: left;
+    width: 33.333%;
+  }
+  #about {
+    background-color: rgb(252, 168, 207);
+    height: 90rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  html {
+    font-size: 9px;
+  }
+  .col {
+    width: 33.3333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  html {
+    font-size: 10px;
+  }
+  #about {
+    background-color: rgb(252, 168, 207);
+    height: 80rem;
+  }
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.container-2 {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+#logo-box {
+  float: left;
+  padding-top: 1.5rem;
+}
+#nav-links {
+  float: right;
+}
+.clearfix::after {
+  /*iki tane divin ardına bir eleman ekleyeceğiz ekleyeceğimiz eleman bir block eleman*/
+  content: "";
+  display: block;
+  clear: both;
+}
+#nav-links .nav-item {
+  float: left;
+  margin: 0.4rem;
+}
+#nav-links .nav-link {
+  color: rgb(179, 66, 245);
+  font-size: 2.6rem;
+  font-weight: 200;
+  display: block; /*üstten altanda etkin olsun istiyorum*/
+  padding: 1.6rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s;
+}
+#nav-links .nav-link:hover {
+  color: white;
+}
+/*header*/
+header {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  background-color: rgb(233, 169, 241);
+
+  padding-top: calc(100px + 5rem); /*degerleriyle oynadım*/
+
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+h1 {
+  color: #fff;
+}
+h2 {
+  font-size: 3.6rem;
+  color: rgb(197, 154, 231);
+  font-family: "Dancing Script", cursive;
+}
+.star-light {
+  border: none;
+  border-top: 0.2rem solid rgb(197, 154, 231);
+  max-width: 25rem;
+  margin: 2.5rem auto; /*auto ile ortalamış oluyor*/
+  overflow: visible;
+  /*height:0;*/
+}
+.star-light::after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  color: rgb(197, 154, 231);
+  font-weight: 900;
+  font-size: 3.2rem;
+  position: relative;
+  top: -2.6rem;
+  background-color: white;
+  padding: 0 0.8rem;
+}
+/*portfolio*/
+
+/* height: 800px;*/
+
+/*text-align: center;*/
+
+#profile-image {
+  width: 200px;
+  height: auto;
+}
+
+.portfolio-item {
+  position: relative;
+}
+.portfolio-item img {
+  display: block;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f158ad;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  object-fit: cover;
+}
+.img-overlay .icon {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.portfolio-item:hover .img-overlay {
+  opacity: 0.8;
+}
+.writing {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  border: pink 0.5rem solid;
+  border-radius: 50%;
+}
+/*about*/
+#about {
+  background-color: rgb(252, 168, 207);
+  height: 80rem;
+}
+#about h2 {
+  /* color: rgb(252, 252, 252);*/
+  margin-top: 10rem;
+}
+#text2 {
+  color: rgba(192, 62, 186, 0.952);
+}
+.about-text {
+  margin-top: 10rem;
+  text-align: left;
+}
+.star-light1 {
+  border: none;
+  border-top: 0.2rem solid rgba(192, 62, 186, 0.952);
+  max-width: 25rem;
+  margin: 2.5rem auto; /*auto ile ortalamış oluyor*/
+  overflow: visible;
+  /*height:0;*/
+}
+.star-light1::after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  color: rgba(192, 62, 186, 0.952);
+  font-weight: 900;
+  font-size: 3.2rem;
+  position: relative;
+  top: -2.6rem;
+  background-color: rgb(252, 168, 207);
+  padding: 0 0.8rem;
+}
+#about-text .left {
+  float: left;
+  width: 50%;
+  padding-left: 20rem;
+  padding-right: 2rem;
+}
+#about-text .right {
+  float: right;
+  width: 50%;
+  padding-right: 20rem;
+  padding-left: 2rem;
+}
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(255, 125, 212);
+  color: #fff;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+footer h4 {
+  font-size: 2.4rem;
+}
+footer p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+footer li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.btn {
+  margin-top: 4rem;
+  font-weight: 400;
+  display: inline-block;
+  border: 0.2rem solid transparent;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-social {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.btn-large {
+  font-size: 2rem;
+  padding: 2.2rem 1.6rem;
+}
+.btn-primary {
+  background-color: rgb(189, 70, 245);
+  border-color: rgb(189, 70, 245);
+  height: 6rem;
+  width: 12rem;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 3rem;
+}
+.btn-outline:hover {
+  border-color: #fff;
+  background-color: #ee2593;
+  transition: all 0.5s;
+}
+.btn-primary:hover {
+  border-color: #fff;
+  background-color: #ee2593;
+  transition: all 0.5s;
+}
+.btn-outline {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+  border-radius: 4rem;
+}
+
+.copyright {
+  background-color: rgb(180, 6, 180);
+  color: white;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  text-align: center;
+}
